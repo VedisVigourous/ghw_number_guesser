@@ -15,6 +15,9 @@ The Number Guessing Game is a simple web application that challenges users to gu
 - `src/style.css`: Provides styling with a modern dark theme.
 - `src/script.js`: Implements the game logic and user interaction.
 
+## Source Code
+- Browse the full source in the repository: [github.com/VedisVigourous/ghw_number_guesser/tree/main/src](https://github.com/VedisVigourous/ghw_number_guesser/tree/main/src)
+
 ## How to Run the Game
 1. Clone the repository to your local machine.
 2. Open the `src/index.html` file in a web browser.
