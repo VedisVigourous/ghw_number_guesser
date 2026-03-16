@@ -14,6 +14,12 @@ function startGame() {
 // Function to process the user's guess
 function processGuess() {
     const userGuess = Number(document.getElementById('guessInput').value);
+
+    if (!Number.isInteger(userGuess) || userGuess < 1 || userGuess > 100) {
+        document.getElementById('message').textContent = 'Please enter a valid number between 1 and 100.';
+        return;
+    }
+
     attempts++;
     document.getElementById('attempts').textContent = `Attempts: ${attempts}`;
 
@@ -27,7 +33,7 @@ function processGuess() {
 }
 
 // Event listeners for the button and input field
-document.getElementById('guessButton').addEventListener('click', processGuess);
+document.getElementById('submitGuess').addEventListener('click', processGuess);
 document.getElementById('guessInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
         processGuess();
